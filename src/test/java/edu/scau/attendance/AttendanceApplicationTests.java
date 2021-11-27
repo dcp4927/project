@@ -63,7 +63,7 @@ class AttendanceApplicationTests {
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
         // 数据库中表的名字，表示要对哪些表进行自动生成controller service、mapper...
-        strategy.setInclude("absence", "course",
+        strategy.setInclude("absence", "course","department","mentor",
                 "nation", "schedule", "student", "teacher");
         // 数据库表映射到实体的命名策略,驼峰命名法
         strategy.setNaming(NamingStrategy.underline_to_camel);
